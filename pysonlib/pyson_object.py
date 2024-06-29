@@ -2,6 +2,7 @@
 # 참조 모듈 목록.
 #------------------------------------------------------------------------
 from .pyson_helper import PYSONHelper
+import json
 
 
 #------------------------------------------------------------------------
@@ -12,7 +13,8 @@ class PYSONObject:
 	# 생성됨.
 	#------------------------------------------------------------------------
 	def __init__(self) -> None:
-		pass
+		self.__pyson_text__ : str = None
+		self.__pyson_object__ : object = None
 
 	#------------------------------------------------------------------------
 	# 파일에서 불러오기.
@@ -30,13 +32,14 @@ class PYSONObject:
 	# 문자열에서 불러오기.
 	#------------------------------------------------------------------------
 	def LoadFromString(self, pysonString : str) -> None:
-		pass
+		self.__pyson_text__ = PYSONHelper.RemoveAllCommentsInString(pysonString)
+		self.__pyson_object__ = json.loads(self.__pyson_text__)
 
 	#------------------------------------------------------------------------
 	# 문자열로 저장하기.
 	#------------------------------------------------------------------------
 	def SaveToString(self) -> str:
-		pysonString : str = ""
+		pysonString : str = repr(self.__pyson_object__)
 		return pysonString
 	
 
@@ -45,7 +48,7 @@ class PYSONObject:
 	#------------------------------------------------------------------------
 	@staticmethod
 	def Serialize(classObject : object) -> str:
-		pysonString : str = ""
+		pysonString : str = json.dump()
 		return pysonString
 
 

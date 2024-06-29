@@ -22,7 +22,7 @@ class PYSONHelper:
 	@staticmethod
 	def STRToJSON(jsonString : str) -> dict:
 		jsonString = PYSONHelper.RemoveAllCommentsInString(jsonString)
-		json.loads(jsonString)
+		return json.loads(jsonString)
 
 	#------------------------------------------------------------------------
 	# 문자열에서 주석(//, /**/, #)을 전부 제거.

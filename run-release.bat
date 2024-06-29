@@ -7,7 +7,7 @@ if exist "build" rmdir /s /q "build"
 if exist "dist" rmdir /s /q "dist"
 if exist "pysonlib.egg-info" rmdir /s /q "pysonlib.egg-info"
 
-python setup.py sdist bdist_wheel
+python release.py sdist bdist_wheel
 rem >NUL 2>&1
 
 rem set TWINE_USERNAME=__token__
