@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 #------------------------------------------------------------------------
 setup(
 	name = "pysonlib",
-	version = "0.0.1",
+	version = "0.0.2",
 	author = "ddukbaek2",
 	author_email = "ddukbaek2@gmail.com",
 	description = "Python Script Object Notation (pysonlib) is a standard text-based format for expressing structured data using Python object syntax.",
@@ -17,6 +17,11 @@ setup(
 	long_description_content_type = "text/markdown",
 	url = "https://github.com/ddukbaek2/pysonlib",
 	packages = find_packages(),
+	include_package_data=True,
+	package_data = {
+		"": ["resources/*"],
+	},
+    install_requires = [],
 	classifiers = [
 		"Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",

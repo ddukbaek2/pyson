@@ -1,5 +1,7 @@
 @echo off
 
+venv\Scripts\activate
+
 if exist "output" rmdir /s /q "output"
 if exist "build" rmdir /s /q "build"
 if exist "dist" rmdir /s /q "dist"

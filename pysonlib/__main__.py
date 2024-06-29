@@ -9,4 +9,5 @@ import json
 # 파일 진입점.
 #------------------------------------------------------------------------
 if __name__ == "__main__":
-    builtins.print("pysonlib")
+	builtins.print("pysonlib")
+	pass

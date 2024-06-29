@@ -1,5 +1,12 @@
 {
     "python.analysis.extraPaths": [
         "./pysonlib"
-    ]
+    ],
+	"[python]": {
+		"editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "diffEditor.ignoreTrimWhitespace": false,
+		"editor.formatOnType": true,
+		"editor.wordBasedSuggestions": "off"
+	},
 }

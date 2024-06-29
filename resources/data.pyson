@@ -1,0 +1,11 @@
+# 데이터.
+document : dict = {
+	"stringData": "hello",
+	"intData": 0,
+	"floatData": 0.0,
+	"boolData": False,
+	"arrayData": [ 
+		0, 0, 0, 0, 0, 0 
+	],
+	"objectData": None,
+}
