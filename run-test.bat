@@ -1,5 +1,5 @@
 @echo off
 
-venv\Scripts\activate
+@rem .venv\Scripts\activate
 
 python -m unittest discover -s tests
