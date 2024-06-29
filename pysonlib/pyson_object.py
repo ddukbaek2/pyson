@@ -1,0 +1,4 @@
+
+
+class PYSONObject:
+    pass
