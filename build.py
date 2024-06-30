@@ -17,9 +17,11 @@ setup(
 	long_description_content_type = "text/markdown",
 	url = "https://github.com/ddukbaek2/pysonlib",
 	packages = find_packages(),
-	include_package_data=True,
+	include_package_dat = True,
 	package_data = {
-		"": ["resources/*"],
+		"": [
+			"resources/*"
+		],
 	},
     install_requires = [],
 	classifiers = [

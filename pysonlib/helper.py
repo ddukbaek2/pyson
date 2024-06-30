@@ -25,6 +25,14 @@ class PYSONHelper:
 		return json.loads(jsonString)
 
 	#------------------------------------------------------------------------
+	# 예쁜 JSON 텍스트로 반환.
+	#------------------------------------------------------------------------
+	def GetPrettyJsonString(jsonString : str) -> str:
+		jsonDictData = json.loads(jsonString)
+		newJsonString = json.dumps(jsonDictData, indent = 4, ensure_ascii = False)
+		return newJsonString
+
+	#------------------------------------------------------------------------
 	# 문자열에서 주석(//, /**/, #)을 전부 제거.
 	#------------------------------------------------------------------------
 	@staticmethod

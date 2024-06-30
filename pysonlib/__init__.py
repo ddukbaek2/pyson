@@ -1,8 +1,8 @@
 #------------------------------------------------------------------------
 # 참조 모듈 목록.
 #------------------------------------------------------------------------
-from .pyson_helper import PYSONHelper
-from .pyson_object import PYSONObject
+from .helper import PYSONHelper
+from .object import PYSONObject
 
 
 #------------------------------------------------------------------------

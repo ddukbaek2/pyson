@@ -11,7 +11,7 @@ from pysonlib import PYSONObject
 #------------------------------------------------------------------------
 class TestCase(unittest.TestCase):
     def test_Print(self):
-        builtins.print("pysonlib-test")
+        builtins.print("pysonlib-tests")
         pysonObject = PYSONObject()
 
 
