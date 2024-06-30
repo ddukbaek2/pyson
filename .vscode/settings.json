@@ -1,11 +1,13 @@
 {
-    "python.analysis.extraPaths": [
-        "./pysonlib"
-    ],
+	"python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+	"python.pythonPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+	"python.analysis.extraPaths": [
+		"./pysonlib"
+	],
 	"[python]": {
 		"editor.insertSpaces": false,
-        "editor.tabSize": 4,
-        "diffEditor.ignoreTrimWhitespace": false,
+		"editor.tabSize": 4,
+		"diffEditor.ignoreTrimWhitespace": false,
 		"editor.formatOnType": true,
 		"editor.wordBasedSuggestions": "off"
 	},
